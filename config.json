@@ -1,0 +1,32 @@
+{
+  "url": "https://samples.openweathermap.org/data/2.5/weather?id=2172797&appid=b6907d289e10d714a6e88b30761fae22",
+  "update_secs": 5,
+  "scale": "C",
+  "font": "Arial",
+  "font_size": 8,
+  "icon_size": 16,
+  "colors": {
+    "0": "#9bbcff",
+    "223": "#9bbcff",
+    "228": "#9dbdff",
+    "233": "#9dbeff",
+    "238": "#9fbfff",
+    "243": "#a1c0ff",
+    "248": "#a5c2ff",
+    "253": "#a8c5ff",
+    "258": "#afc9ff",
+    "263": "#b9d0ff",
+    "268": "#cedcff",
+    "273": "#fef9ff",
+    "278": "#fff3ef",
+    "283": "#ffece0",
+    "288": "#ffe3ca",
+    "293": "#ffd9b6",
+    "298": "#ffcc99",
+    "303": "#ffbe7e",
+    "308": "#ffad5e",
+    "313": "#ff932c",
+    "318": "#ff7300",
+    "323": "#ff3300"
+  }
+}
