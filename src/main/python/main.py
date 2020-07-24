@@ -1,7 +1,8 @@
+from fbs_runtime.application_context.PyQt5 import ApplicationContext
+from PyQt5 import QtWidgets, QtCore, QtGui
 import sys
 import requests
 import json
-from PyQt5 import QtWidgets, QtCore, QtGui
 from datetime import datetime
 from bisect import bisect_left
 
@@ -158,14 +159,15 @@ def update_tray(config, tray):
 
 
 def main():
-    app = QtWidgets.QApplication(sys.argv)
+    appctxt = ApplicationContext()
     w = QtWidgets.QWidget()
     with open('config.json') as json_file:
         config = json.load(json_file)
     tray = SystemTrayIcon(config, w)
     update_tray(config, tray)
     tray.show()
-    sys.exit(app.exec_())
+    exit_code = appctxt.app.exec_()
+    sys.exit(exit_code)
 
 
 if __name__ == '__main__':
