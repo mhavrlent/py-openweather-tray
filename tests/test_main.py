@@ -1,5 +1,4 @@
-from py_openweather_tray import main
-
+from src.main.python import main
 
 def test_get_weather_data():
     assert (main.get_weather_data(
